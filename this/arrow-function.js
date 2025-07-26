@@ -1,4 +1,5 @@
 // Q1
+
 const objQ1 = {
   getThisGetter() {
 	console.log('this from inside of getThisGetter:', this);

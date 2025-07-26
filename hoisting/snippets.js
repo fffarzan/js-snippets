@@ -1,4 +1,4 @@
-// Q1: var and iife (blubank)
+// Q1: blubank (var and iife)
 
 // var name = 'blubank';
 // (function () {
