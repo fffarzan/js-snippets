@@ -4,5 +4,7 @@ const obj = globalThis;
 
 // This is a trick to figure out the global object.
 if (obj.Math === Math) {
-  console.log('obj is a global object!')
+  console.log("obj is a global object!");
 }
+
+// check for string: typeof string === 'string'
