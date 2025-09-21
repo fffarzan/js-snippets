@@ -7,4 +7,4 @@ console.log("f", f);
 const g = f.bind();
 console.log("g", g);
 
-console.log("is equal", f === g);
+console.log("is equal", f === g); // false

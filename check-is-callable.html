@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check if a value is callable</title>
+  </head>
+  <body>
+    This functionality is based on checking type of the value in DOM.
+  </body>
+  <script>
+    var documentAll = typeof document == "object" && document.all;
+    var checkCallableIfDocumentExists = function (argument) {
+      return typeof argument == "function" || argument === documentAll;
+    };
+    var checkCallable = function (argument) {
+      return typeof argument == "function";
+    };
+
+    // type of document.all is undefined in the DOM. The rationale for this is compatibility with code designed for old browsers.
+    var isCallable =
+      typeof documentAll == "undefined" && documentAll !== undefined
+        ? checkCallableIfDocumentExists
+        : checkCallable;
+
+    console.log("is string callable:", isCallable("test"));
+    console.log("is number callable:", isCallable(5));
+    console.log("is object callable:", isCallable({}));
+    console.log("is array callable:", isCallable([]));
+    console.log(
+      "is function callable:",
+      isCallable(function () {})
+    );
+    console.log("is document callable:", isCallable(document));
+  </script>
+</html>
