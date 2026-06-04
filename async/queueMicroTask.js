@@ -6,9 +6,6 @@
 // });
 // console.log('end');
 
-
-
-
 // Q2: Task queue creation with queueMicrotask.
 
 // const taskQueue = [];
@@ -30,9 +27,6 @@
 // addToTaskQueue(logTask('Task 2'));
 // addToTaskQueue(logTask('Task 3'));
 
-
-
-
 // Q3: setTimeout and queueMicroTask.
 
 // const log = console.log;
@@ -42,9 +36,6 @@
 // setTimeout(callback, 0);
 // queueMicrotask(urgentCallback);
 // log("Main program exiting");
-
-
-
 
 // Q5: queueMicroTask in a function
 

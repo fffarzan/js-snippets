@@ -9,9 +9,6 @@
 // })();
 // console.log(value);
 
-
-
-
 // Q2: (I don't like this snipeets. For later ...)
 
 // const makeWithdraw = (balance) =>
@@ -40,9 +37,6 @@
 // console.log(secondAccount.withdraw(30)); // "Insufficient money"
 // console.log(secondAccount.withdraw(20)); // 0
 
-
-
-
 // Q3: var in for loops with iife to presice the i
 
 // bad
@@ -68,9 +62,6 @@
 //   document.body.appendChild(button);
 // }
 // console.log(i); // 2
-
-
-
 
 // Q4: Async IIFE
 
